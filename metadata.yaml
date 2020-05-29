@@ -1,0 +1,20 @@
+name: op-slurm
+summary: Describe your charm here
+maintainers:
+    - jesse <jesse@omnivector.solutions>
+description: |
+    A nice long description of what the product does and any
+    high level information about how the charm provides the product,
+    on which platform, etc.
+tags:
+    - misc
+series:
+    - focal
+requires:
+  db:
+    interface: mysql
+resources:
+  slurm:
+    type: file
+    filename: slurm.snap
+    description: slurm snap
